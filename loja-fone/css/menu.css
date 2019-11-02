@@ -1,0 +1,65 @@
+@media (max-width: 530px) {
+  .menu {
+    width: 90vw;
+  }
+  .menu .content .action {
+    text-align: justify;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 345px) {
+  .menu {
+    position: absolute;
+    top: 15px;
+    left: 85vw;
+    cursor: pointer;
+  }
+  .menu > .-first {
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+  }
+  .menu > .-second {
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+  }
+  .menu > .-third {
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+  }
+  .menu .content {
+    margin-top: 5px;
+    width: 90vw;
+    height: 150vw;
+    transform: translateX(105vw);
+    transition: transform 200ms linear;
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  .menu .content.-active {
+    width: 90vw;
+    padding-top: 10px;
+    height: 150vw;
+    margin-top: 5px;
+    transform: translateX(-65vw);
+    transition: transform 200ms linear;
+    box-shadow: 1px 1px 10px rgb(75, 71, 71);
+  }
+  .menu .content > .action {
+    display: block;
+    color: #000;
+    transform: translateX(100vw);
+    transition: transform 200ms linear;
+  }
+  .menu .content.-active > .action {
+    margin-top: 5px;
+    transform: translateX(0vw);
+    transition: transform 200ms linear;
+    box-shadow: #000;
+    padding-left: 5px;
+  }
+}

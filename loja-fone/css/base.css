@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #252a34;
+  background-image: linear-gradient(to top, #ff2e63, #252a34);
+  background-repeat: no-repeat;
+}
+@media (max-height: 940px) {
+  body {
+    background-image: linear-gradient(to top, #252a34, #252a34);
+  }
+}
+
+@media (max-width: 345px) {
+  body {
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,79 @@
+var $star = window.document.querySelector(".-star1");
+$star.addEventListener("click", handleClickStar);
+
+function handleClickStar() {
+  $star = document.getElementById("-star1");
+  $star.src = "/img/star_active.png";
+  console.log($star);
+}
+
+
+let verifica = 1;
+let posicao = 0;
+var $star = document.getElementsByClassName("-star1")[posicao];
+$star.addEventListener("click", handleClickStar);
+console.log($star);
+function handleClickStar() {
+  console.log(posicao);
+  console.log($star);
+  if (verifica == 1) {
+    $star = document.getElementsByClassName("-star1")[posicao];
+    $star.src = "img/star_active.png";
+    console.log("igual");
+    verifica = 0;
+    posicao++;
+  } else {
+    $star.src = "img/star.png";
+    verifica = 1;
+    console.log("diferente");
+  }
+}
+
+
+
+
+let verifica = 1;
+let posicao = 0;
+var $star = document.getElementsByClassName("-star")[posicao];
+console.log("eieieie" + $star);
+$star.addEventListener("click", handleClickStar);
+console.log($star);
+function handleClickStar() {
+  console.log(posicao);
+  console.log($star);
+  if (verifica == 1) {
+    $star = document.getElementsByClassName("-star1")[posicao];
+    $star.src = "img/star_active.png";
+    console.log("igual");
+    verifica = 0;
+    posicao++;
+  } else {
+    $star.src = "img/star.png";
+    verifica = 1;
+    console.log("diferente");
+  }
+}
+
+
+
+// function handleClickStar() {
+//   console.log($star);
+//   if (verifica == 1) {
+//     $star = document.getElementById($star);
+//     $star.src = "img/star_active.png";
+//     console.log("igual");
+//     verifica = 0;
+//   } else {
+//     $star.src = "img/star.png";
+//     verifica = 1;
+//     console.log("diferente");
+//   }
+// }
+
+/*if ($heart.classList.contains("-active")) {
+    console.log("Desative o like");
+    $heart.classList.remove("-active");
+  } else {
+    console.log("Ative o like");
+    $heart.classList.add("-active");
+  }*/
